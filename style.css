@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul: #759FBC;
+    --branco: #ffff;
+    --preto: #000000;
+    --cinza: #B5B5B5;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--azul);
+}
+
+.div-blue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.header-p {
+    font-size: 24px;
+    color: var(--branco);
+}
+
+.header-icons i, #menu-icon {
+    font-size: 24px;
+    color: var(--branco);
+}
+
+/* Barra de pesquisa para desktop */
+.search-bar-desktop {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--branco);
+    border-radius: 5px;
+    height: 55%;
+    width: 22%;
+}
+
+.header-input::placeholder {
+    color: var(--branco);
+}
+
+.search-bar-desktop input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: var(--branco);
+    flex: 1;
+    padding: 5px;
+}
+
+.search-bar-desktop i {
+    color: var(--branco);
+    font-size: 20px;
+}
+
+/* Menu lateral (modal) */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: var(--azul);
+    padding: 20px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .nav-ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.side-menu .nav-item {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.side-menu .nav-link {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+/* Links do menu principal para desktop */
+.nav-links {
+    border-bottom: 1px solid var(--preto);
+}
+
+.div-white-header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--branco);
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--preto);
+    text-decoration: none;
+}
+
+/*-----------CSS do Footer------------*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.div-black-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--preto);
+    width: 100%;
+    height: 60px;
+}
+
+.div-black-footer p {
+    color: var(--branco);
+    font-size: 22px;
+}
+
+.div-blue-footer {
+    width: 100%;
+    height: 180px;
+    background-color: var(--azul);
+}
+
+
+
+
+
+#menu-icon {
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 728px) {
+    /* Mostra o ícone de menu hambúrguer e oculta a barra de pesquisa e links do nav */
+    #menu-icon {
+        display: block;
+    }
+
+    .search-bar-desktop {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Mostra o menu lateral (modal) no mobile */
+    .side-menu {
+        display: flex;
+    }
+}
