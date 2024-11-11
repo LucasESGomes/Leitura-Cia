@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home page - Leitura&Cia</title>
+</head>
+
+<body>
+    <header>
+        <div class="div-blue-header">
+            <!-- Menu Hamburger só visível no mobile -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <p class="header-p">Leitura&Cia</p>
+
+            <!-- Barra de pesquisa padrão para desktop -->
+            <div class="search-bar-desktop">
+                <input class="header-input" type="text" placeholder="Digite para pesquisar">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <div class="header-icons">
+                <i class='bx bx-user-circle'></i>
+                <i class='bx bx-cart'></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Links do menu principal para desktop -->
+    <nav class="nav-links">
+        <div class="div-white-header">
+            <ul class="nav-ul">
+                <li class="nav-item"><a class="nav-link" href="">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Pré Venda</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Livros Nacionais</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Sobre Nós</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu lateral (modal) para mobile -->
+    <div class="side-menu" id="side-menu">
+        <ul class="nav-ul">
+            <li class="nav-item"><a class="nav-link" href="">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Pré Venda</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Livros Nacionais</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Sobre Nós</a></li>
+        </ul>
+        <i class='bx bx-x' id="close-menu"></i>
+    </div>
+
+    <script>
+        // Abre o menu lateral ao clicar no ícone do menu
+        document.getElementById("menu-icon").addEventListener("click", function () {
+            document.getElementById("side-menu").style.left = "0";
+        });
+
+        // Fecha o menu lateral ao clicar no ícone de fechar
+        document.getElementById("close-menu").addEventListener("click", function () {
+            document.getElementById("side-menu").style.left = "-100%";
+        });
+
+    </script>
+</body>
+
+</html>
