@@ -139,7 +139,7 @@ header {
 
 /*-----------CSS do Footer------------*/
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: var(--azul);
@@ -147,9 +147,10 @@ footer {
 }
 
 .social-media {
-    text-align: center;
+    text-align: flex-start;
     padding: 10px;
     font-size: 20px;
+    background-color: var(--branco);
 }
 
 .social-media img {
@@ -173,6 +174,25 @@ footer {
     padding: 0;
 }
 
+.hidden {
+    display: none;
+}
+
+.footer-column h3 {
+    cursor: pointer;
+    position: relative;
+}
+
+.footer-column h3:hover {
+    color: var(--cinza);
+}
+
+.footer-column ul {
+    list-style: none;
+    padding-left: 15px;
+    transition: max-height 0.3s ease-out;
+}
+
 .footer-column li a {
     color: var(--branco);
     text-decoration: none;
@@ -180,8 +200,8 @@ footer {
 
 .payment-methods {
     position: relative;
-    left: 37em;
-    bottom: 1em;
+    left: 26em;
+    bottom: 1.5em;
     border-radius: 15px;
     background-color: var(--branco);
     text-align: center;
@@ -231,5 +251,15 @@ footer {
     /* Mostra o menu lateral (modal) no mobile */
     .side-menu {
         display: flex;
+    }
+
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 90%;
+        margin-bottom: 20px;
     }
 }
