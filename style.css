@@ -36,8 +36,14 @@ header {
 }
 
 .header-icons i, #menu-icon {
-    font-size: 24px;
+    font-size: 30px;
     color: var(--branco);
+}
+
+.logo-text {
+    list-style: none;
+    text-decoration: none;
+    color: white;
 }
 
 /* Barra de pesquisa para desktop */
@@ -147,15 +153,18 @@ footer {
 }
 
 .social-media {
-    text-align: flex-start;
+    margin-top: 2em;
+    margin-left: 6.5em;
     padding: 10px;
     font-size: 20px;
-    background-color: var(--branco);
+    
 }
 
 .social-media img {
-    margin: 0 10px;
+    justify-content: space-between;
+    margin: 5px 8px;
     width: 30px;
+    height: 30px;
 }
 
 .footer-sections {
@@ -246,46 +255,59 @@ main {
 }
 
 .text-main {
-    position: relative;
-    top: 20px;
-    margin-left: 8.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-size: 30px;
 }
+
+
 
 /* Container principal dos produtos */
 .product-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 45px;
     margin-top: 20px;
 }
 
 /* Estilização dos cards de produto */
 .product-card {
-    width: 250px;
+    height: 470px;
+    width: 235px;
     border: 1px solid var(--cinza);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: var(--branco);
+    z-index: 3;
 }
 
 .product-card img {
-    width: 100%;
-    height: auto;
+    margin-top: 20px;
+    width: 70%;
+    height: 52%;
 }
 
 .discount-tag {
-    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
     background-color: var(--azul);
     color: var(--branco);
     padding: 5px 10px;
     font-size: 14px;
-    top: 10px;
-    right: 10px;
+    top: -235px;
+    left: 100px;
     border-radius: 5px;
     z-index: 2; 
+    width: 55%;
+    height: 20px;
 }
 
 .product-title {
@@ -309,22 +331,42 @@ main {
     font-weight: bold;
 }
 
+.inf-card {
+    height: 100px;
+}
+
+.inf-card h3 {
+    font-size: 16px;
+}
+
+.inf-card p {
+    font-size: 13px;
+}
+
+.button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .buy-button {
+    padding: 10px 30px;
     background-color: var(--azul);
     color: var(--branco);
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 10px;
 }
 
 .buy-button:hover {
     background-color: #5c8cae;
+    transition: ease 0.3s;
+    transform: scale(1.15);
 }
 
 /* Responsividade */
 @media (max-width: 728px) {
+
     /* Mostra o ícone de menu hambúrguer e oculta a barra de pesquisa e links do nav */
     #menu-icon {
         display: block;
@@ -355,5 +397,13 @@ main {
 
     .banner-section img {
         width: 80%;
+    }
+
+    .text-main {
+        font-size: 120%;
+    }
+
+    .social-media {
+        margin-left: 2em;
     }
 }
