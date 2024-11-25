@@ -61,128 +61,41 @@
     <!-----------------------Principal (meio do site)----------------------->
 
     <main>
-        <div id="slider">
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-            <input type="radio" name="slider" id="slide4">
-            <div id="slides">
-               <div id="overflow">
-                  <div class="inner">
-                     <div class="slide slide_1">
-                        <div class="slide-content">
-                           <img src="../img/banner.webp">
-                        </div>
-                     </div>
-                     <div class="slide slide_2">
-                        <div class="slide-content">
-                           <h2>Slide 2</h2>
-                        </div>
-                     </div>
-                     <div class="slide slide_3">
-                        <div class="slide-content">
-                           <h2>Slide 3</h2>
-                        </div>
-                     </div>
-                     <div class="slide slide_4">
-                        <div class="slide-content">
-                           <h2>Slide 4</h2>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+        <section class="sobre-nos">
+            <div class="secao-missao">
+                <div class="texto">
+                    <h2>Nossa missão</h2>
+                    <p>
+                        Nosso site busca democratizar a leitura, oferecendo espaço
+                        tanto para autores consagrados quanto independentes. Nosso 
+                        objetivo é apoiar escritores emergentes, ampliando sua visibilidade.
+                        Acreditamos na diversidade literária e em conectar leitores a novas vozes.
+                    </p>
+                </div>
+                <div class="imagem">
+                    <img src="/img/pilha-de-livros.jpg" alt="Ilustração de pessoas com livros">
+                </div>
             </div>
-            <div id="controls">
-               <label for="slide1"></label>
-               <label for="slide2"></label>
-               <label for="slide3"></label>
-               <label for="slide4"></label>
+            <div class="secao-historia">
+                <div class="imagem">
+                    <img src="/img/librarie.jpg" alt="Imagem de estantes de livros">
+                </div>
+                <div class="texto">
+                    <h2 class="h2-history">Nossa história</h2>
+                    <p>
+                        Nossa loja começou como um pequeno clube de leitura, criado por amigos
+                        apaixonados por livros que queriam compartilhar suas descobertas. Com
+                        o tempo, percebemos que muitos autores talentosos tinham dificuldade
+                        em alcançar o público. Decidimos então transformar o clube em uma
+                        plataforma de vendas para apoiar escritores independentes, ajudando
+                        a conectar suas histórias com leitores de todo o país.
+                    </p>
+                </div>
             </div>
-            <div id="bullets">
-               <label for="slide1"></label>
-               <label for="slide2"></label>
-               <label for="slide3"></label>
-               <label for="slide4"></label>
-            </div>
-         </div>
+        </section>
 
-        <div class="text-main">
-            <p>Top 10 dos livros mais vendidos!</p>
-        </div>
-
-        <!-----------------------Produtos----------------------->
-        <div class="product-container">
-            <!-- Produto 1 -->
-            <div class="product-card">
-                <img src="img/harry-potter.jpg" alt="Harry Potter" class="product-image">
-                <div class="discount-tag">15% OFF</div>
-                <div class="inf-card">
-                    <h3 class="product-title">Harry Potter - Pedra Filosofal</h3>
-                    <p class="product-price">De <span class="old-price">R$ 39,99</span> por <span class="new-price">R$
-                            34,99</span></p>
-                    <div class="delivery-text">
-                        <i class='bx bx-envelope'></i>
-                        <p>Entregue por Leitura&Cia</p>
-                    </div>
-                </div>
-                <div class="button-card">
-                    <button class="buy-button">Comprar</button>
-                </div>
-            </div>
-
-            <!-- Produto 2 -->
-            <div class="product-card">
-                <img src="/img/jujutsu-kaisen.webp" alt="Jujutsu Kaisen" class="product-image">
-                <div class="discount-tag">15% OFF</div>
-                <div class="inf-card">
-                    <h3 class="product-title">Jujutsu Kaisen - Manga Volume 1</h3>
-                    <p class="product-price">De <span class="old-price">R$ 37,99</span> por <span class="new-price">R$
-                            32,29</span></p>
-                    <div class="delivery-text">
-                        <i class='bx bx-envelope'></i>
-                        <p>Entregue por Leitura&Cia</p>
-                    </div>
-                </div>
-                <div class="button-card">
-                    <button class="buy-button">Comprar</button>
-                </div>
-            </div>
-
-            <!-- Produto 3 -->
-            <div class="product-card">
-                <img src="img/demon-slayer.jpg" alt="Demon Slayer" class="product-image">
-                <div class="discount-tag">15% OFF</div>
-                <div class="inf-card">
-                    <h3 class="product-title">Demon Slayer - Kimetsu no Yaiba Vol. 1</h3>
-                    <p class="product-price">De <span class="old-price">R$ 28,50</span> por <span class="new-price">R$
-                            24,22</span></p>
-                    <div class="delivery-text">
-                        <i class='bx bx-envelope'></i>
-                        <p>Entregue por Leitura&Cia</p>
-                    </div>
-                </div>
-                <div class="button-card">
-                    <button class="buy-button">Comprar</button>
-                </div>
-            </div>
-
-            <!-- Produto 4 -->
-            <div class="product-card">
-                <img src="/img/destrua-Diario.jpeg" alt="Deste Lado do Livro" class="product-image">
-                <div class="discount-tag">6% OFF</div>
-                <div class="inf-card">
-                    <h3 class="product-title">Destrua este Diario - Keri Smith</h3>
-                    <p class="product-price">De <span class="old-price">R$ 69,99</span> por <span class="new-price">R$
-                            65,89</span></p>
-                    <div class="delivery-text">
-                        <i class='bx bx-envelope'></i>
-                        <p>Entregue por Leitura&Cia</p>
-                    </div>
-                </div>
-                <div class="button-card">
-                    <button class="buy-button">Comprar</button>
-                </div>
-            </div>
+        <div class="hr-section">
+            <hr>
         </div>
     </main>
 

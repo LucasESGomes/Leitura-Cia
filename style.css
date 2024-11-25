@@ -243,7 +243,7 @@ main {
 }
 
 #slider {
-    margin: 0 auto;
+    margin: 50px auto;
     width: 800px;
     max-width: 100%;
     text-align: center;
@@ -497,6 +497,68 @@ main {
     transition: ease 0.3s;
     transform: scale(1.15);
 }
+
+/*---------- Main da página sobre nós ----------*/
+.sobre-nos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.secao-missao, .secao-historia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.secao-missao .texto, .secao-historia .texto {
+    max-width: 45%;
+}
+
+.secao-missao .imagem, .secao-historia .imagem {
+    max-width: 45%;
+}
+
+.secao-missao img, .secao-historia img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sobre-nos h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 100px;
+}
+
+.h2-history {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 100px;
+    justify-content: flex-end;
+}
+
+.sobre-nos p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+hr {
+    background-color: var(--azul);
+    height: 3px;
+    width: 62%;
+}
+
+.hr-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 
 /* Responsividade */
 @media (max-width: 728px) {
